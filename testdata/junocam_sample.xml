@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<img:Image_Product_Information>
+  <img:Exposure_Parameters>
+    <img:exposure_duration unit="ms">10.000000</img:exposure_duration>
+  </img:Exposure_Parameters>
+  <!-- TBD - fix bug. should not need to do this -->
+  <img:Filter>
+    <img:filter_name>METHANE</img:filter_name>
+  </img:Filter>
+  <img:Filter>
+    <img:filter_name>BLUE</img:filter_name>
+  </img:Filter>
+  <img:Filter>
+    <img:filter_name>GREEN</img:filter_name>
+  </img:Filter>
+  <img:Filter>
+    <img:filter_name>RED</img:filter_name>
+  </img:Filter>
+  <!--    # set(4 = $label.FILTER_NAME.size())
+         foreach ( $i in [1..4] )
+        <img:Filter>
+          <img:filter_name>$label.FILTER_NAME.get($foreach.index)</img:filter_name>
+        </img:Filter
+        # end-->
+  <img:Sampling_Parameters>
+    <img:sample_bit_mode_id>SQROOT</img:sample_bit_mode_id>
+    <img:sampling_factor>1</img:sampling_factor>
+  </img:Sampling_Parameters>
+  <img:Frame_Parameters>
+    <img:interframe_delay unit="s">0.500</img:interframe_delay>
+  </img:Frame_Parameters>
+</img:Image_Product_Information>
+<img:Image_Compression_Parameters>
+  <img:type>INTEGER COSINE TRANSFORM</img:type>
+</img:Image_Compression_Parameters>
+<img:Imaging_Instrument_Parameters>
+  <img:Instrument_Device_Temperature>
+    <img:Instrument_Device_Temperature_Index>
+      <img:name>FOCAL_PLANE_TEMPERATURE</img:name>
+      <img:temperature_calibrated unit="K">265.8</img:temperature_calibrated>
+    </img:Instrument_Device_Temperature_Index>
+  </img:Instrument_Device_Temperature>
+</img:Imaging_Instrument_Parameters>
+<img:Processing_History>
+  <img:Process>
+    <img:Software>
+      <img:name>JUNOMAKEPDS.PY 0.4</img:name>
+    </img:Software>
+  </img:Process>
+</img:Processing_History>
